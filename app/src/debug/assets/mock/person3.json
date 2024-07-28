@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Person",
+        "last": "Third"
+      },
+      "location": {
+        "street": {
+          "number": 8620,
+          "name": "Gammel Strandvej"
+        },
+        "city": "København N",
+        "state": "Hovedstaden",
+        "country": "Denmark",
+        "postcode": 61754,
+        "coordinates": {
+          "latitude": "-40.2326",
+          "longitude": "-57.7771"
+        },
+        "timezone": {
+          "offset": "-2:00",
+          "description": "Mid-Atlantic"
+        }
+      },
+      "email": "simon.johansen@example.com",
+      "login": {
+        "uuid": "d46d3649-1c25-49b0-8f7c-62efa89d00bf",
+        "username": "heavyrabbit479",
+        "password": "xander",
+        "salt": "gUkuLTap",
+        "md5": "cddc88304a77fb5ad906c1590569f291",
+        "sha1": "e4736ff6a06fbe5d583441f74afedcb075345b9e",
+        "sha256": "6fd7c66a1288189ff21047f5204d521c04887a009a92996c4085c0299e2341d7"
+      },
+      "dob": {
+        "date": "1952-02-01T13:57:16.071Z",
+        "age": 22
+      },
+      "registered": {
+        "date": "2020-12-29T10:32:58.132Z",
+        "age": 3
+      },
+      "phone": "65580079",
+      "cell": "05935823",
+      "id": {
+        "name": "CPR",
+        "value": "010252-1616"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/1.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/1.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/1.jpg"
+      },
+      "nat": "DK"
+    }
+  ],
+  "info": {
+    "seed": "67de6b4f80422f15",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}

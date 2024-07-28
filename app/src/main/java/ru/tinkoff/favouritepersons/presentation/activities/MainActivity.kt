@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
 
         vieModel.usersLoadError.observe(this){
             if (!it.isNullOrEmpty())
-                Snackbar.make(fab_add_person_from_network, "Internet error! Check your connection", Snackbar.LENGTH_LONG).show()
+                Snackbar.make(fab_add_person_from_network, "Internet error! Check your connection", Snackbar.LENGTH_INDEFINITE).show()
         }
 
         vieModel.isLoading.observe(this){

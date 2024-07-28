@@ -8,6 +8,10 @@ android {
     namespace 'ru.tinkoff.favouritepersons'
     compileSdk 33
 
+    testOptions {
+        animationsDisabled = true
+    }
+
     defaultConfig {
         applicationId "ru.tinkoff.favouritepersons"
         minSdk 27
@@ -62,8 +66,25 @@ dependencies {
     //room library
     implementation 'androidx.room:room-runtime:2.5.1'
     implementation 'androidx.room:room-ktx:2.5.1'
+    implementation 'androidx.test.ext:junit-ktx:1.2.1'
     kapt 'com.github.bumptech.glide:compiler:4.12.0'
     implementation 'androidx.databinding:baseLibrary:3.2.0-alpha11'
     kapt 'androidx.room:room-compiler:2.5.1'
 
+    //http
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+    //tests
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'io.github.kakaocup:kakao:3.2.1'
+    androidTestImplementation 'com.kaspersky.android-components:kaspresso:1.5.1'
+    androidTestImplementation 'com.kaspersky.android-components:kaspresso-allure-support:1.5.1'
+    androidTestImplementation('org.hamcrest:hamcrest:2.2')
+    androidTestImplementation("com.github.tomakehurst:wiremock:2.23.0") {
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    }
 }
